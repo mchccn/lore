@@ -1,0 +1,9 @@
+&9Arcane Extractor
+
+&6Ability: Extraction &e&lRIGHT CLICK
+&r&7Open a magical portal to extract any
+item upgrades from an item, including
+dyes, skins, reforges, books, and
+enchantments! &8(Single use only)
+
+&l&9RARE

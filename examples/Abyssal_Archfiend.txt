@@ -1,0 +1,29 @@
+&5Abyssal Archfiend
+&8Fate Sealed
+
+&7Health: &c600,000,000$ru
+&7Damage: &c42,000 per second
+
+&aMalevolent Hitshield
+&8At 100%/66%/33% HP
+&7Immunity shield dropped hits
+regardless of damage.
+Receives &c-75% Ferocity
+&7while NOT active.
+
+&cYang Glyphs
+&8Starting at 66% HP
+&7Throws glyphs down.
+Stand next to them or die.
+
+&eNukekubi Fixations
+&8Starting at 33% HP
+&7Spawns weird heads.
+Clear them by looking at them or
+suffer damage.
+
+&dDimensional Rift
+&8Starting at 50% HP
+&7Summons gravity wells that 
+pull you in and occasionally
+spawn damaging minions.
