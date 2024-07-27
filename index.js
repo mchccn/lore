@@ -73,31 +73,54 @@ function render(lore) {
                     obfuscated: false,
                     chroma: false,
                 };
-            else if (x === "**") return create("✪");
-            else if (x === "*1") return create("➊");
-            else if (x === "*2") return create("➋");
-            else if (x === "*3") return create("➌");
-            else if (x === "*4") return create("➍");
-            else if (x === "*5") return create("➎");
-            else if (x === "$rn") return create("⬩");
-            else if (x === "$jd") return create("☘");
-            else if (x === "$ab") return create("⸕");
-            else if (x === "$to") return create("✧");
-            else if (x === "$sa") return create("✎");
-            else if (x === "$am") return create("❈");
-            else if (x === "$js") return create("❁");
-            else if (x === "$op") return create("❂");
-            else if (x === "$ru") return create("♥");
-            else if (x === "$ci") return create("☘");
-            else if (x === "$aq") return create("α");
-            else if (x === "$pe") return create("☘");
-            else if (x === "$on") return create("☣");
-            else if (x === "$ci") return create("❥");
-            else if (x === "$co") return create("⚔");
-            else if (x === "$of") return create("☠");
-            else if (x === "$de") return create("☤");
-            else if (x === "$mi") return create("✦");
-            else if (x === "$un") return create("❂");
+            else if (x.length === 2 && x[0] === "*")
+                return create(
+                    {
+                        "*": "✪",
+                        1: "➊",
+                        2: "➋",
+                        3: "➌",
+                        4: "➍",
+                        5: "➎",
+                    }[x[1]]
+                );
+            else if (x.length === 3 && x[0] === "$")
+                return create(
+                    {
+                        rn: "⬩",
+                        jd: "☘",
+                        ab: "⸕",
+                        to: "✧",
+                        sa: "✎",
+                        am: "❈",
+                        js: "❁",
+                        op: "❂",
+                        ru: "♥",
+                        ci: "☘",
+                        aq: "α",
+                        pe: "☘",
+                        on: "☣",
+                        ch: "❥",
+                        co: "⚔",
+                        of: "☠",
+                        de: "☤",
+                        mi: "✦",
+                        un: "❂",
+                        dy: "✿",
+                        fg: "⚚",
+                        fr: "⫽",
+                        ps: "⦾",
+                        vi: "♨",
+                        me: "☄",
+                        ws: "☯",
+                        as: "⚔",
+                        mf: "✯",
+                        pl: "♣",
+                        ad: "๑",
+                        hr: "❣",
+                        fs: "☂",
+                    }[x[1] + x[2]]
+                );
             else return create(x);
         })
         .filter((x) => x !== undefined)
